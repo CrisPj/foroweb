@@ -19,21 +19,28 @@
                             <thead>
                             <tr>
                                 <th class="forum-name"><i class="fa fa-sitemap"></i> Titulo Tema</th>
-                                <th class="topics"><i class="fa fa-comments-o"></i> Ultimos Tema </th>
+                                <th class="topics"><i class="fa fa-comments-o"></i> Moderador </th>
                                 <th class="posts"><i class="fa fa-pencil-square-o"></i> Cantidad de Post</th>
-                                <th class="lastpost"><i class="fa fa-history"></i> <span> Ultimo post</span></th>
+                                <th class="lastpost"><i class="fa fa-history"></i> <span> Ultima actividad</span></th>
                             </tr>
                             </thead>
                             <tbody>
                             {foreach $temas as $tema}
-                            {if $tema['id_categoria'] eq $cat['id_categoria']}
-                            <tr>
-                                <td><a href="index.php?r=verpost&categoria={$cat['id_categoria']}&id_tema={$tema['id_tema']}">{$tema['tema']}</a></td>
-                                <td>asd</td>
-                                <td>Nuse</td>
-                                <td>Ultima respuesta</td>
-                            </tr>
-                            {/if}
+                                {foreach $dtema as $dt}
+                                    {if $tema['id_categoria'] eq $cat['id_categoria']}
+                                        <tr>
+                                            <td><a href="index.php?r=verpost&categoria={$cat['id_categoria']}&id_tema={$tema['id_tema']}">{$tema['tema']}</a></td>
+                                            <td>{$tema['usuario']}</td>
+                                            {if $dt['id_tema'] eq $tema['id_tema']}
+                                                <td>{$dt['cant']}</td>
+                                                <td>{$dt['max']}</td>
+                                                {else}
+                                                <td>Nuse</td>
+                                                <td>Ultima respuesta</td>
+                                            {/if}
+                                        </tr>
+                                    {/if}
+                                {/foreach}
                             {/foreach}
 
                             </tbody>

@@ -25,6 +25,8 @@ class signinControl extends controlador_base
                         $_SESSION['logueado'] = true;
                         $categorias = Categorias::obtenerCategorias();
                         $temas = Temas::obtenerTemas();
+                        $datosTema = Temas::obtenerDatosTema();
+                        $this->registro->template->dtemas = array("nombre"=>"dtema","valores"=>$datosTema);
                         $this->registro->template->categorias = array("nombre"=>"categorias","valores"=>$categorias);
                         $this->registro->template->temas = array("nombre"=>"temas","valores"=>$temas);
                         $this->registro->template->mostrar('home/index');

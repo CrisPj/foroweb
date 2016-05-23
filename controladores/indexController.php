@@ -10,10 +10,11 @@ class indexControl extends controlador_base
     {
         $categorias = Categorias::obtenerCategorias();
         $temas = Temas::obtenerTemas();
-
+        $datosTema = Temas::obtenerDatosTema();
         $this->registro->template = new Template($this->registro);
         $this->registro->template->categorias = array("nombre"=>"categorias","valores"=>$categorias);
         $this->registro->template->temas = array("nombre"=>"temas","valores"=>$temas);
+        $this->registro->template->dtemas = array("nombre"=>"dtema","valores"=>$datosTema);
         if ($_SESSION['rol'] == 'admin')
         {
             $this->registro->template->mostrar('admin/index');

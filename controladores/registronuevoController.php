@@ -20,8 +20,6 @@ class registronuevoControl extends controlador_base
                 Usuario::crearNuevo($user,$email, $password);
             }
         }
-
-        $this->registro->template = new Template($this->registro);
-            $this->registro->template->mostrar('home/index');
+        header('Location: index.php');
     }
 }

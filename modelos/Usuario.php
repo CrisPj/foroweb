@@ -14,6 +14,8 @@ class Usuario
         $password = password_hash($password,PASSWORD_DEFAULT,$options);
         $db = Datos::getDB();
         $db->ejecutar("insert into usuario(usuario,password,email) values ('$user','$password','$email')");
+        $id=self::obtenerid($email);
+        $db->ejecutar("insert into miembro(id_usuario) VALUES ($id)");
     }
 
     public static function obtenerid($email)
