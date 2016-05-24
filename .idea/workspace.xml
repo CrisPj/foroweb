@@ -5,34 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca139711-cb6e-4673-9927-7842e28aba4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/cambiarpasswordController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/configController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/datoseditadosController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/editardatosController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/logoutController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/mensajeController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/misdatosController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/recuperarController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin/index.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/common/datos.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/common/password.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/home/editardatos.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/home/recuperar.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO" afterPath="$PROJECT_DIR$/TODO" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controladores/indexController.php" afterPath="$PROJECT_DIR$/controladores/indexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controladores/signinController.php" afterPath="$PROJECT_DIR$/controladores/signinController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelos/Usuario.php" afterPath="$PROJECT_DIR$/modelos/Usuario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/aside.tpl" afterPath="$PROJECT_DIR$/templates/admin/aside.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/footer.tpl" afterPath="$PROJECT_DIR$/templates/admin/footer.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/head.tpl" afterPath="$PROJECT_DIR$/templates/admin/head.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/header.tpl" afterPath="$PROJECT_DIR$/templates/admin/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/common/head.tpl" afterPath="$PROJECT_DIR$/templates/common/head.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home/header.tpl" afterPath="$PROJECT_DIR$/templates/home/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home/login.tpl" afterPath="$PROJECT_DIR$/templates/home/login.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/sistema.php" afterPath="$PROJECT_DIR$/includes/sistema.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelos/Categorias.php" afterPath="$PROJECT_DIR$/modelos/Categorias.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home/ver.tpl" afterPath="$PROJECT_DIR$/templates/home/ver.tpl" />
     </list>
     <ignored path="foroweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,20 +44,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - foroweb@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="rol_usuario" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -85,75 +51,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TODO" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TODO">
+      <file leaf-file-name="ver.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/home/ver.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controladores/indexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/admin/header.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signinController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controladores/signinController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuario.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modelos/Usuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-              <folding>
-                <marker date="1464114533822" expanded="true" signature="523:604" placeholder="insert into usuario... " />
-                <marker date="1464114533822" expanded="true" signature="668:712" placeholder="insert into miembro... " />
-                <marker date="1464114533822" expanded="true" signature="837:888" placeholder="select id_us... usuario" />
-                <marker date="1464114533822" expanded="true" signature="1021:1080" placeholder="select passw... usuario" />
-                <marker date="1464114533822" expanded="true" signature="1327:1375" placeholder="SELECT email... usuario" />
-                <marker date="1464114533822" expanded="true" signature="2371:2433" placeholder="update usuar... " />
-                <marker date="1464114533822" expanded="true" signature="2561:2763" placeholder="select * fro... usuario" />
-                <marker date="1464114533822" expanded="true" signature="2561:2764" placeholder="select * fro... usuario" />
-                <marker date="1464114533822" expanded="true" signature="2561:2771" placeholder="select id_us... usuario" />
-                <marker date="1464114533822" expanded="true" signature="3152:3181" placeholder="update Usuar... " />
-                <marker date="1464114533822" expanded="true" signature="3152:3182" placeholder="update Usuar... " />
-                <marker date="1464114533822" expanded="true" signature="3152:3191" placeholder="update Usuar... " />
-                <marker date="1464114533822" expanded="true" signature="3395:3454" placeholder="update usuar... " />
-                <marker date="1464114533822" expanded="true" signature="3477:3516" placeholder="update miemb... " />
-                <marker date="1464114533822" expanded="true" signature="3477:3517" placeholder="update miemb... " />
-                <marker date="1464114533822" expanded="true" signature="3477:3539" placeholder="update miemb... " />
-                <marker date="1464114533822" expanded="true" signature="3477:3557" placeholder="update miemb... " />
-                <marker date="1464114533822" expanded="true" signature="3477:3572" placeholder="update miemb... " />
-                <marker date="1464114533822" expanded="true" signature="3477:3589" placeholder="update miemb... " />
-                <marker date="1464114533822" expanded="true" signature="3477:3590" placeholder="update miemb... " />
-                <marker date="1464114533822" expanded="true" signature="3719:3761" placeholder="select rol f... usuario" />
-                <marker date="1464114533822" expanded="true" signature="3719:3914" placeholder="select rol f... usuario" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -173,17 +76,14 @@
         <option value="$PROJECT_DIR$/includes/config.php" />
         <option value="$PROJECT_DIR$/includes/ruta.php" />
         <option value="$PROJECT_DIR$/templates/miembro/index.tpl" />
-        <option value="$PROJECT_DIR$/includes/sistema.php" />
         <option value="$PROJECT_DIR$/templates/common/rol.tpl" />
         <option value="$PROJECT_DIR$/assets/css/bootstrap_custom.css" />
         <option value="$PROJECT_DIR$/templates/miembro/header.tpl" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/controladores/verpostController.php" />
-        <option value="$PROJECT_DIR$/modelos/Categorias.php" />
         <option value="$PROJECT_DIR$/modelos/Temas.php" />
         <option value="$PROJECT_DIR$/templates/home/index.tpl" />
         <option value="$PROJECT_DIR$/controladores/postController.php" />
-        <option value="$PROJECT_DIR$/templates/home/ver.tpl" />
         <option value="$PROJECT_DIR$/templates/common/post.tpl" />
         <option value="$PROJECT_DIR$/controladores/nuevopostController.php" />
         <option value="$PROJECT_DIR$/controladores/crearpostController.php" />
@@ -208,15 +108,18 @@
         <option value="$PROJECT_DIR$/templates/home/editardatos.tpl" />
         <option value="$PROJECT_DIR$/controladores/datoseditadosController.php" />
         <option value="$PROJECT_DIR$/templates/common/head.tpl" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/console.sql" />
         <option value="$PROJECT_DIR$/controladores/signinController.php" />
         <option value="$PROJECT_DIR$/modelos/Usuario.php" />
-        <option value="$PROJECT_DIR$/controladores/indexController.php" />
         <option value="$PROJECT_DIR$/templates/admin/head.tpl" />
         <option value="$PROJECT_DIR$/templates/admin/footer.tpl" />
         <option value="$PROJECT_DIR$/templates/admin/aside.tpl" />
         <option value="$PROJECT_DIR$/templates/admin/index.tpl" />
         <option value="$PROJECT_DIR$/templates/admin/header.tpl" />
+        <option value="$PROJECT_DIR$/includes/sistema.php" />
+        <option value="$PROJECT_DIR$/modelos/Categorias.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/console.sql" />
+        <option value="$PROJECT_DIR$/controladores/indexController.php" />
+        <option value="$PROJECT_DIR$/templates/home/ver.tpl" />
       </list>
     </option>
   </component>
@@ -330,6 +233,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foroweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foroweb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,34 +408,35 @@
       <workItem from="1464017897496" duration="13677000" />
       <workItem from="1464053840177" duration="7229000" />
       <workItem from="1464108351763" duration="4532000" />
-      <workItem from="1464113912681" duration="1926000" />
+      <workItem from="1464113912681" duration="4297000" />
+      <workItem from="1464123705063" duration="643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72394000" />
+    <option name="totallyTimeSpent" value="75408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22515528" sideWeight="0.5087848" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22515528" sideWeight="0.49121523" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22515528" sideWeight="0.511713" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3272328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22515528" sideWeight="0.48828697" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2810559" sideWeight="0.4941435" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3272328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2810559" sideWeight="0.49121523" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -542,89 +460,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.temas">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.tema_moderador">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/Temas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="22" column="68" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
-          <folding>
-            <marker date="1464027938448" expanded="true" signature="251:503" placeholder="select t.id_... categorias" />
-            <marker date="1464027938448" expanded="true" signature="251:504" placeholder="select id_ca... temas" />
-            <marker date="1464027938448" expanded="true" signature="632:750" placeholder="select t.id_... posts" />
-            <marker date="1464027938448" expanded="true" signature="880:970" placeholder="select p.pos... post" />
-            <marker date="1464027938448" expanded="true" signature="880:985" placeholder="select p.pos... posts" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="23" column="106" selection-start-line="23" selection-start-column="106" selection-end-line="23" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/registrarseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/Categorias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="91" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="91" />
-          <folding>
-            <marker date="1464027253503" expanded="true" signature="238:295" placeholder="select id_ca... categorias" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/verpostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/common/post.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/nuevopostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modelos/Post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -636,13 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/ver.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="112" selection-start-line="7" selection-start-column="112" selection-end-line="7" selection-end-column="112" />
         </state>
       </provider>
     </entry>
@@ -786,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -822,57 +643,26 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.privilegio">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TODO">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.rol_usuario">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.rol">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -880,7 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,30 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <marker date="1464114533822" expanded="true" signature="523:604" placeholder="insert into usuario... " />
-            <marker date="1464114533822" expanded="true" signature="668:712" placeholder="insert into miembro... " />
-            <marker date="1464114533822" expanded="true" signature="837:888" placeholder="select id_us... usuario" />
-            <marker date="1464114533822" expanded="true" signature="1021:1080" placeholder="select passw... usuario" />
-            <marker date="1464114533822" expanded="true" signature="1327:1375" placeholder="SELECT email... usuario" />
-            <marker date="1464114533822" expanded="true" signature="2371:2433" placeholder="update usuar... " />
-            <marker date="1464114533822" expanded="true" signature="2561:2763" placeholder="select * fro... usuario" />
-            <marker date="1464114533822" expanded="true" signature="2561:2764" placeholder="select * fro... usuario" />
-            <marker date="1464114533822" expanded="true" signature="2561:2771" placeholder="select id_us... usuario" />
-            <marker date="1464114533822" expanded="true" signature="3152:3181" placeholder="update Usuar... " />
-            <marker date="1464114533822" expanded="true" signature="3152:3182" placeholder="update Usuar... " />
-            <marker date="1464114533822" expanded="true" signature="3152:3191" placeholder="update Usuar... " />
-            <marker date="1464114533822" expanded="true" signature="3395:3454" placeholder="update usuar... " />
-            <marker date="1464114533822" expanded="true" signature="3477:3516" placeholder="update miemb... " />
-            <marker date="1464114533822" expanded="true" signature="3477:3517" placeholder="update miemb... " />
-            <marker date="1464114533822" expanded="true" signature="3477:3539" placeholder="update miemb... " />
-            <marker date="1464114533822" expanded="true" signature="3477:3557" placeholder="update miemb... " />
-            <marker date="1464114533822" expanded="true" signature="3477:3572" placeholder="update miemb... " />
-            <marker date="1464114533822" expanded="true" signature="3477:3589" placeholder="update miemb... " />
-            <marker date="1464114533822" expanded="true" signature="3477:3590" placeholder="update miemb... " />
-            <marker date="1464114533822" expanded="true" signature="3719:3761" placeholder="select rol f... usuario" />
-            <marker date="1464114533822" expanded="true" signature="3719:3914" placeholder="select rol f... usuario" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -927,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,6 +705,150 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.rol">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.rango">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/sistema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.permisos_categoria">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/Categorias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <marker date="1464118578248" expanded="true" signature="248:295" placeholder="select id_ra... rango" />
+            <marker date="1464118578248" expanded="true" signature="333:392" placeholder="select id_ca... categorias" />
+            <marker date="1464118578248" expanded="true" signature="333:473" placeholder="select c.id_... categorias" />
+            <marker date="1464118578248" expanded="true" signature="333:476" placeholder="select id_ca... categorias" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.temas">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/principal.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.posts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.tema_moderador">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/indexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8f346676/9c88fdad-5ca1-45cc-8cbf-0b47d0216089/foroweb.categorias">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -955,18 +861,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/indexController.php">
+    <entry file="file://$PROJECT_DIR$/TODO">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/header.tpl">
+    <entry file="file://$PROJECT_DIR$/templates/home/ver.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding />
         </state>
       </provider>

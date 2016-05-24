@@ -4,7 +4,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Posts En categoria</h3>
-            {if $rol != 'visitante'}
+            {if $rol != 'Visitante'}
                 <a href="index.php?r=nuevopost&id_categoria={$smarty.get['categoria']}&id_tema={$smarty.get['id_tema']}" class="btn btn-default pull-right">Nuevo Post</a>
             {/if}
         </div>

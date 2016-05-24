@@ -6,9 +6,11 @@
 include_once 'modelo_base.php';
 class Categorias extends BaseModel
 {
-    public static function obtenerCategorias()
+    public static function obtenerCategorias($rango)
     {
         $db = Datos::getDB();
-        return $db->obtenerDatos("select id_categoria,categoria,descripcion from categorias");
+        $id_rango = $db->obtenerDato("select id_rango from rango where rango='$rango'");
+        return $db->obtenerDatos("select c.id_categoria,categoria,descripcion from categorias c join permisos_categoria p on c.id_categoria=p.id_categoria 
+where  p.id_rango <= $id_rango");
     }
 }

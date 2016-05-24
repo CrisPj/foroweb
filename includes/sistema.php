@@ -5,7 +5,11 @@
 session_start();
 if (!isset($_SESSION['rol']))
 {
-    $_SESSION['rol'] = 'visitante';
+    $_SESSION['rol'] = 'Visitante';
+}
+if (!isset($_SESSION['rango']))
+{
+    $_SESSION['rango'] = 'Visitante';
 }
 include 'config.php';
 // Include las librerias

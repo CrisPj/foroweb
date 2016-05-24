@@ -8,7 +8,8 @@ class indexControl extends controlador_base
 {
     function index()
     {
-        $categorias = Categorias::obtenerCategorias();
+        $rango = $_SESSION['rango'];
+        $categorias = Categorias::obtenerCategorias($rango);
         $temas = Temas::obtenerTemas();
         $datosTema = Temas::obtenerDatosTema();
         $this->registro->template = new Template($this->registro);

@@ -22,524 +22,466 @@
       <table id="13" parent="1" name="municipio"/>
       <table id="14" parent="1" name="permisos_categoria"/>
       <table id="15" parent="1" name="permisos_tema"/>
-      <table id="16" parent="1" name="permisos_post"/>
-      <table id="17" parent="1" name="baneos"/>
-      <table id="18" parent="1" name="replys"/>
-      <table id="19" parent="1" name="permisos_reply"/>
-      <table id="20" parent="1" name="miembro"/>
-      <table id="21" parent="1" name="tema_moderador"/>
-      <column id="22" parent="2" name="id_categoria">
+      <table id="16" parent="1" name="baneos"/>
+      <table id="17" parent="1" name="replys"/>
+      <table id="18" parent="1" name="miembro"/>
+      <table id="19" parent="1" name="tema_moderador"/>
+      <column id="20" parent="2" name="id_categoria">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="23" parent="2" name="categoria">
+      <column id="21" parent="2" name="categoria">
         <mandatory>1</mandatory>
         <data-type>varchar(30)</data-type>
       </column>
-      <column id="24" parent="2" name="descripcion">
+      <column id="22" parent="2" name="descripcion">
         <mandatory>1</mandatory>
         <data-type>varchar(120)</data-type>
       </column>
-      <key id="25" parent="2" name="PRIMARY">
+      <key id="23" parent="2" name="PRIMARY">
         <columns>id_categoria</columns>
         <primary>1</primary>
       </key>
-      <column id="26" parent="3" name="id_post">
+      <column id="24" parent="3" name="id_post">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="27" parent="3" name="id_usuario">
+      <column id="25" parent="3" name="id_usuario">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="28" parent="3" name="post">
+      <column id="26" parent="3" name="post">
         <mandatory>1</mandatory>
         <data-type>varchar(30)</data-type>
       </column>
-      <column id="29" parent="3" name="contenido">
+      <column id="27" parent="3" name="contenido">
         <mandatory>1</mandatory>
         <data-type>varchar(300)</data-type>
       </column>
-      <column id="30" parent="3" name="id_tema">
+      <column id="28" parent="3" name="id_tema">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="31" parent="3" name="fecha_creado">
+      <column id="29" parent="3" name="fecha_creado">
         <mandatory>1</mandatory>
         <data-type>date</data-type>
       </column>
-      <index id="32" parent="3" name="id_tema">
+      <index id="30" parent="3" name="id_tema">
         <columns>id_tema</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="33" parent="3" name="id_usuario">
+      <index id="31" parent="3" name="id_usuario">
         <columns>id_usuario</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="34" parent="3" name="PRIMARY">
+      <key id="32" parent="3" name="PRIMARY">
         <columns>id_post</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="35" parent="3" name="posts_ibfk_1">
+      <foreign-key id="33" parent="3" name="posts_ibfk_1">
         <columns>id_tema</columns>
         <ref-key>~.temas.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="36" parent="3" name="posts_ibfk_2">
+      <foreign-key id="34" parent="3" name="posts_ibfk_2">
         <columns>id_usuario</columns>
         <ref-key>~.usuario.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="37" parent="4" name="id_tema">
+      <column id="35" parent="4" name="id_tema">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="38" parent="4" name="id_categoria">
+      <column id="36" parent="4" name="id_categoria">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="39" parent="4" name="tema">
+      <column id="37" parent="4" name="tema">
         <mandatory>1</mandatory>
         <data-type>varchar(30)</data-type>
       </column>
-      <column id="40" parent="4" name="descripcion">
+      <column id="38" parent="4" name="descripcion">
         <mandatory>1</mandatory>
         <data-type>varchar(120)</data-type>
       </column>
-      <column id="41" parent="4" name="foto">
+      <column id="39" parent="4" name="foto">
         <data-type>blob</data-type>
       </column>
-      <index id="42" parent="4" name="id_categoria">
+      <index id="40" parent="4" name="id_categoria">
         <columns>id_categoria</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="43" parent="4" name="PRIMARY">
+      <key id="41" parent="4" name="PRIMARY">
         <columns>id_tema</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="44" parent="4" name="temas_ibfk_1">
+      <foreign-key id="42" parent="4" name="temas_ibfk_1">
         <columns>id_categoria</columns>
         <ref-key>~.categorias.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="45" parent="5" name="id_usuario">
+      <column id="43" parent="5" name="id_usuario">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="46" parent="5" name="email">
+      <column id="44" parent="5" name="email">
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="47" parent="5" name="password">
+      <column id="45" parent="5" name="password">
         <mandatory>1</mandatory>
         <data-type>varchar(61)</data-type>
       </column>
-      <column id="48" parent="5" name="clave">
+      <column id="46" parent="5" name="clave">
         <data-type>varchar(32)</data-type>
       </column>
-      <column id="49" parent="5" name="usuario">
+      <column id="47" parent="5" name="usuario">
         <data-type>varchar(50)</data-type>
       </column>
-      <index id="50" parent="5" name="usuario_email_uindex">
+      <index id="48" parent="5" name="usuario_email_uindex">
         <columns>email</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <index id="51" parent="5" name="usuario_usuario_uindex">
+      <index id="49" parent="5" name="usuario_usuario_uindex">
         <columns>usuario</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="52" parent="5" name="PRIMARY">
+      <key id="50" parent="5" name="PRIMARY">
         <columns>id_usuario</columns>
         <primary>1</primary>
       </key>
-      <key id="53" parent="5" name="usuario_email_uindex">
+      <key id="51" parent="5" name="usuario_email_uindex">
         <columns>email</columns>
         <underlying-index>usuario_email_uindex</underlying-index>
       </key>
-      <key id="54" parent="5" name="usuario_usuario_uindex">
+      <key id="52" parent="5" name="usuario_usuario_uindex">
         <columns>usuario</columns>
         <underlying-index>usuario_usuario_uindex</underlying-index>
       </key>
-      <column id="55" parent="6" name="id_rango">
+      <column id="53" parent="6" name="id_rango">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="56" parent="6" name="rango">
+      <column id="54" parent="6" name="rango">
         <mandatory>1</mandatory>
         <data-type>varchar(30)</data-type>
       </column>
-      <key id="57" parent="6" name="PRIMARY">
+      <key id="55" parent="6" name="PRIMARY">
         <columns>id_rango</columns>
         <primary>1</primary>
       </key>
-      <column id="58" parent="7" name="id_privilegio">
+      <column id="56" parent="7" name="id_privilegio">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="59" parent="7" name="privilegio">
+      <column id="57" parent="7" name="privilegio">
         <data-type>varchar(30)</data-type>
       </column>
-      <key id="60" parent="7" name="PRIMARY">
+      <key id="58" parent="7" name="PRIMARY">
         <columns>id_privilegio</columns>
         <primary>1</primary>
       </key>
-      <column id="61" parent="8" name="id_rol">
+      <column id="59" parent="8" name="id_rol">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="62" parent="8" name="rol">
+      <column id="60" parent="8" name="rol">
         <data-type>varchar(30)</data-type>
       </column>
-      <key id="63" parent="8" name="PRIMARY">
+      <key id="61" parent="8" name="PRIMARY">
         <columns>id_rol</columns>
         <primary>1</primary>
       </key>
-      <column id="64" parent="9" name="id_rol">
+      <column id="62" parent="9" name="id_rol">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="65" parent="9" name="id_privilegio">
+      <column id="63" parent="9" name="id_privilegio">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="66" parent="9" name="rol_privFK2">
+      <index id="64" parent="9" name="rol_privFK2">
         <columns>id_privilegio</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="67" parent="9" name="PRIMARY">
+      <key id="65" parent="9" name="PRIMARY">
         <columns>id_rol
 id_privilegio</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="68" parent="9" name="rol_privFK1">
+      <foreign-key id="66" parent="9" name="rol_privFK1">
         <columns>id_rol</columns>
         <ref-key>~.rol.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="69" parent="9" name="rol_privFK2">
+      <foreign-key id="67" parent="9" name="rol_privFK2">
         <columns>id_privilegio</columns>
         <ref-key>~.privilegio.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="70" parent="10" name="id_rol">
+      <column id="68" parent="10" name="id_rol">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <default-expression>&apos;4&apos;</default-expression>
       </column>
-      <column id="71" parent="10" name="id_usuario">
+      <column id="69" parent="10" name="id_usuario">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="72" parent="10" name="rol_usuarioFK2">
+      <index id="70" parent="10" name="rol_usuarioFK2">
         <columns>id_usuario</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="73" parent="10" name="PRIMARY">
+      <key id="71" parent="10" name="PRIMARY">
         <columns>id_rol
 id_usuario</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="74" parent="10" name="rol_usuarioFK1">
+      <foreign-key id="72" parent="10" name="rol_usuarioFK1">
         <columns>id_rol</columns>
         <ref-key>~.rol.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="75" parent="10" name="rol_usuarioFK2">
+      <foreign-key id="73" parent="10" name="rol_usuarioFK2">
         <columns>id_usuario</columns>
         <ref-key>~.usuario.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="76" parent="11" name="id_pais">
+      <column id="74" parent="11" name="id_pais">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="77" parent="11" name="pais">
+      <column id="75" parent="11" name="pais">
         <data-type>varchar(30)</data-type>
       </column>
-      <key id="78" parent="11" name="PRIMARY">
+      <key id="76" parent="11" name="PRIMARY">
         <columns>id_pais</columns>
         <primary>1</primary>
       </key>
-      <column id="79" parent="12" name="id_estado">
+      <column id="77" parent="12" name="id_estado">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="80" parent="12" name="id_pais">
+      <column id="78" parent="12" name="id_pais">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="81" parent="12" name="estado">
+      <column id="79" parent="12" name="estado">
         <data-type>varchar(50)</data-type>
       </column>
-      <key id="82" parent="12" name="PRIMARY">
+      <key id="80" parent="12" name="PRIMARY">
         <columns>id_estado</columns>
         <primary>1</primary>
       </key>
-      <column id="83" parent="13" name="id_municipio">
+      <column id="81" parent="13" name="id_municipio">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="84" parent="13" name="id_estado">
+      <column id="82" parent="13" name="id_estado">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="85" parent="13" name="municipio">
+      <column id="83" parent="13" name="municipio">
         <data-type>varchar(60)</data-type>
       </column>
-      <key id="86" parent="13" name="PRIMARY">
+      <key id="84" parent="13" name="PRIMARY">
         <columns>id_municipio</columns>
         <primary>1</primary>
       </key>
-      <column id="87" parent="14" name="id_rango">
+      <column id="85" parent="14" name="id_rango">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="88" parent="14" name="id_categoria">
+      <column id="86" parent="14" name="id_categoria">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="89" parent="14" name="id_categoria">
+      <index id="87" parent="14" name="id_categoria">
         <columns>id_categoria</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="90" parent="14" name="id_rango">
+      <index id="88" parent="14" name="id_rango">
         <columns>id_rango</columns>
         <desc-columns></desc-columns>
       </index>
-      <foreign-key id="91" parent="14" name="permisos_categoria_ibfk_1">
+      <foreign-key id="89" parent="14" name="permisos_categoria_ibfk_1">
         <columns>id_rango</columns>
         <ref-key>~.rango.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="92" parent="14" name="permisos_categoria_ibfk_2">
+      <foreign-key id="90" parent="14" name="permisos_categoria_ibfk_2">
         <columns>id_categoria</columns>
         <ref-key>~.categorias.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="93" parent="15" name="id_rango">
+      <column id="91" parent="15" name="id_rango">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="94" parent="15" name="id_tema">
+      <column id="92" parent="15" name="id_tema">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="95" parent="15" name="id_rango">
+      <index id="93" parent="15" name="id_rango">
         <columns>id_rango</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="96" parent="15" name="id_tema">
+      <index id="94" parent="15" name="id_tema">
         <columns>id_tema</columns>
         <desc-columns></desc-columns>
       </index>
-      <foreign-key id="97" parent="15" name="permisos_tema_ibfk_1">
+      <foreign-key id="95" parent="15" name="permisos_tema_ibfk_1">
         <columns>id_rango</columns>
         <ref-key>~.rango.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="98" parent="15" name="permisos_tema_ibfk_2">
+      <foreign-key id="96" parent="15" name="permisos_tema_ibfk_2">
         <columns>id_tema</columns>
         <ref-key>~.temas.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="99" parent="16" name="id_rango">
+      <column id="97" parent="16" name="id_usuario">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="100" parent="16" name="id_post">
-        <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
-      </column>
-      <index id="101" parent="16" name="id_post">
-        <columns>id_post</columns>
-        <desc-columns></desc-columns>
-      </index>
-      <index id="102" parent="16" name="id_rango">
-        <columns>id_rango</columns>
-        <desc-columns></desc-columns>
-      </index>
-      <foreign-key id="103" parent="16" name="permisos_post_ibfk_1">
-        <columns>id_rango</columns>
-        <ref-key>~.rango.PRIMARY</ref-key>
-        <cascade-update-rule>restrict</cascade-update-rule>
-        <cascade-delete-rule>restrict</cascade-delete-rule>
-      </foreign-key>
-      <foreign-key id="104" parent="16" name="permisos_post_ibfk_2">
-        <columns>id_post</columns>
-        <ref-key>~.posts.PRIMARY</ref-key>
-        <cascade-update-rule>restrict</cascade-update-rule>
-        <cascade-delete-rule>restrict</cascade-delete-rule>
-      </foreign-key>
-      <column id="105" parent="17" name="id_usuario">
-        <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
-      </column>
-      <column id="106" parent="17" name="ip">
+      <column id="98" parent="16" name="ip">
         <mandatory>1</mandatory>
         <data-type>varchar(18)</data-type>
       </column>
-      <index id="107" parent="17" name="id_usuario">
+      <index id="99" parent="16" name="id_usuario">
         <columns>id_usuario</columns>
         <desc-columns></desc-columns>
       </index>
-      <foreign-key id="108" parent="17" name="baneos_ibfk_1">
+      <foreign-key id="100" parent="16" name="baneos_ibfk_1">
         <columns>id_usuario</columns>
         <ref-key>~.usuario.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="109" parent="18" name="id_reply">
+      <column id="101" parent="17" name="id_reply">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="110" parent="18" name="id_post">
+      <column id="102" parent="17" name="id_post">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="111" parent="18" name="texto">
+      <column id="103" parent="17" name="texto">
         <mandatory>1</mandatory>
         <data-type>varchar(120)</data-type>
       </column>
-      <column id="112" parent="18" name="id_usuario">
+      <column id="104" parent="17" name="id_usuario">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="113" parent="18" name="id_post">
+      <index id="105" parent="17" name="id_post">
         <columns>id_post</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="114" parent="18" name="replys_usuario_id_usuario_fk">
+      <index id="106" parent="17" name="replys_usuario_id_usuario_fk">
         <columns>id_usuario</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="115" parent="18" name="PRIMARY">
+      <key id="107" parent="17" name="PRIMARY">
         <columns>id_reply</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="116" parent="18" name="replys_ibfk_1">
+      <foreign-key id="108" parent="17" name="replys_ibfk_1">
         <columns>id_post</columns>
         <ref-key>~.posts.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="117" parent="18" name="replys_usuario_id_usuario_fk">
+      <foreign-key id="109" parent="17" name="replys_usuario_id_usuario_fk">
         <columns>id_usuario</columns>
         <ref-key>~.usuario.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="118" parent="19" name="id_rango">
-        <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
-      </column>
-      <column id="119" parent="19" name="id_reply">
-        <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
-      </column>
-      <index id="120" parent="19" name="id_rango">
-        <columns>id_rango</columns>
-        <desc-columns></desc-columns>
-      </index>
-      <index id="121" parent="19" name="id_reply">
-        <columns>id_reply</columns>
-        <desc-columns></desc-columns>
-      </index>
-      <foreign-key id="122" parent="19" name="permisos_reply_ibfk_1">
-        <columns>id_rango</columns>
-        <ref-key>~.rango.PRIMARY</ref-key>
-        <cascade-update-rule>restrict</cascade-update-rule>
-        <cascade-delete-rule>restrict</cascade-delete-rule>
-      </foreign-key>
-      <foreign-key id="123" parent="19" name="permisos_reply_ibfk_2">
-        <columns>id_reply</columns>
-        <ref-key>~.replys.PRIMARY</ref-key>
-        <cascade-update-rule>restrict</cascade-update-rule>
-        <cascade-delete-rule>restrict</cascade-delete-rule>
-      </foreign-key>
-      <column id="124" parent="20" name="id_miembro">
+      <column id="110" parent="18" name="id_miembro">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="125" parent="20" name="id_usuario">
+      <column id="111" parent="18" name="id_usuario">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="126" parent="20" name="nombre">
+      <column id="112" parent="18" name="nombre">
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="127" parent="20" name="apaterno">
+      <column id="113" parent="18" name="apaterno">
         <data-type>varchar(30)</data-type>
       </column>
-      <column id="128" parent="20" name="amaterno">
+      <column id="114" parent="18" name="amaterno">
         <data-type>varchar(30)</data-type>
       </column>
-      <column id="129" parent="20" name="nacimiento">
+      <column id="115" parent="18" name="nacimiento">
         <data-type>date</data-type>
       </column>
-      <column id="130" parent="20" name="domicilio">
+      <column id="116" parent="18" name="domicilio">
         <data-type>varchar(30)</data-type>
       </column>
-      <column id="131" parent="20" name="foto">
+      <column id="117" parent="18" name="foto">
         <data-type>blob</data-type>
       </column>
-      <column id="132" parent="20" name="id_pais">
+      <column id="118" parent="18" name="id_pais">
         <data-type>int(11)</data-type>
       </column>
-      <column id="133" parent="20" name="id_rango">
+      <column id="119" parent="18" name="id_rango">
         <data-type>int(11)</data-type>
       </column>
-      <index id="134" parent="20" name="id_usuario">
+      <index id="120" parent="18" name="id_usuario">
         <columns>id_usuario</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="135" parent="20" name="PRIMARY">
+      <key id="121" parent="18" name="PRIMARY">
         <columns>id_miembro</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="136" parent="20" name="miembro_ibfk_1">
+      <foreign-key id="122" parent="18" name="miembro_ibfk_1">
         <columns>id_usuario</columns>
         <ref-key>~.usuario.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="137" parent="21" name="id_miembro">
+      <column id="123" parent="19" name="id_miembro">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="138" parent="21" name="id_tema">
+      <column id="124" parent="19" name="id_tema">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="139" parent="21" name="tema_moderador_temas_id_tema_fk">
+      <index id="125" parent="19" name="tema_moderador_temas_id_tema_fk">
         <columns>id_tema</columns>
         <desc-columns></desc-columns>
       </index>
-      <foreign-key id="140" parent="21" name="tema_moderador_temas_id_tema_fk">
+      <foreign-key id="126" parent="19" name="tema_moderador_temas_id_tema_fk">
         <columns>id_tema</columns>
         <ref-key>~.temas.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
