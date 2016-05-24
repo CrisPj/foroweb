@@ -3,8 +3,8 @@
 <div class="wrapper">
     <header class="main-header">
         <a href="index.php?ruta=admin" class="logo">
-            <span class="logo-mini"><b>Ferre</b>Web</span>
-            <span class="logo-lg"><b>Ferre</b>Web</span>
+            <span class="logo-mini"><b>Foro</b>Web</span>
+            <span class="logo-lg"><b>Foro</b>Web</span>
         </a>
 
         <nav class="navbar navbar-static-top">
@@ -22,7 +22,7 @@
                             <li class="user-footer">
                                 <a href="index.php?ruta=datosEmpleado" class="">Mis datos</a>
                                 <a href="index.php?ruta=cambia" class="">Cambiar Contraseña</a>
-                                <a href="index.php?ruta=logout" class="">Salir</a>
+                                <a href="index.php?r=logout" class="">Salir</a>
                             </li>
                         </ul>
                     </li>

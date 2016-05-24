@@ -2,6 +2,7 @@
 /**
  * Copyright (c) 2016 Cristian Perez
  */
+include "libs/phpmailer/PHPMailerAutoload.php";
 include_once 'modelo_base.php';
 class Usuario
 {
@@ -28,5 +29,81 @@ class Usuario
     {
         $db = Datos::getDB();
         return $db->obtenerDato("select password from usuario where id_usuario='$id_usuario'");
+    }
+
+    public static function obtenerClave()
+    {
+        return strtolower(substr(md5(rand(0, 100000)), 0, 8));
+    }
+
+    public static function obtenerCorreo($email)
+    {
+        $db = Datos::getDB();
+        return $db->obtenerDato("SELECT email FROM usuario WHERE email = '$email'");
+    }
+
+    public static function mandarMail($destino, $asunto, $mensaje, $nombre)
+    {
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+
+        try
+        {
+            $mail->SMTPDebug  = MAIL_SMTPDEBUG;
+            $mail->SMTPAuth = true;
+            $mail->SMTPSecure = MAIL_SECURE;
+            $mail->Host = MAIL_HOST;
+            $mail->Port = MAIL_PORT;
+            $mail->Username = MAIL_USERNAME;
+            $mail->Password = MAIL_PASSWORD;
+//            $mail->addReplyTo('name@yourdomain.com', 'First Last');
+            $mail->addAddress($destino, $nombre);
+            $mail->setFrom(MAIL_USERNAME, 'Servicio Foroweb');
+            $mail->Subject = $asunto;
+            $mail->msgHTML($mensaje);
+            $mail->send();
+        }
+        catch (phpmailerException $e)
+        {
+            echo $e->errorMessage();
+        }
+    }
+    public static function insertarClaveTemporal($claveTemporal, $email)
+    {
+        $db = Datos::getDB();
+        $db->ejecutar("update usuario set clave='$claveTemporal' WHERE email='$email'");
+    }
+
+    public static function obtenerDatos($email)
+    {
+        $db = Datos::getDB();
+        return $db->obtenerFila("select u.id_usuario,usuario,nombre,apaterno,amaterno,domicilio,foto,rango from usuario u join miembro m on u.id_usuario = m.id_usuario 
+              join rango r on r.id_rango=m.id_rango where u.email='$email'");
+    }
+
+    public static function cambiarPass($email, $newpass)
+    {
+        $options = [
+            'salt' => "u83r13375up4h4x0rm45s73r", //write your own code to generate a suitable salt
+            'cost' => 12 // the default cost is 10
+        ];
+        $password = password_hash($newpass,PASSWORD_DEFAULT,$options);
+        $db = Datos::getDB();
+        $db->ejecutar("update Usuario set password='$password'");
+    }
+
+    public static function editarDatos($user, $apaterno, $nombre, $amaterno, $foto, $email)
+    {
+        $db = Datos::getDB();
+        $id = Usuario::obtenerid($email);
+        $db->ejecutar("update usuario set usuario='$user' where id_usuario = '$id'");
+        $db->exec("update miembro set apaterno='$apaterno',amaterno = '$amaterno', nombre='$nombre',foto = '$foto' where id_usuario=$id");
+    }
+
+    public static function obtenerRol($email)
+    {
+        $db = Datos::getDB();
+        return $db->obtenerDato("select rol from usuario u join rol_usuario rs on u.id_usuario=rs.id_usuario
+                                                                  join rol r on rs.id_rol=r.id_rol where email='$email'");
     }
 }

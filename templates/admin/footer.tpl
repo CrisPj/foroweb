@@ -6,9 +6,9 @@
     reserved.
 </footer>
 </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/adminlte.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/adminlte.min.js"></script>
 
 </body>
 <html>

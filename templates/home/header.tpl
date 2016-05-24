@@ -22,7 +22,16 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {if isset($smarty.session['logueado'])}
-                        <li><a href="index.php?r=logout">Cerrar Sesion</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.php?r=misdatos">Mis Datos</a></li>
+                                <li><a href="index.php?r=config">Configuracion</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="index.php?r=logout">Cerrar Sesion</a></li>
+                            </ul>
+                        </li>
+                        
                     {else}
                         <li><a href="index.php?r=login">Iniciar Sesion</a></li>
                         <li><a href="index.php?r=signup">Crear una Cuenta</a></li>

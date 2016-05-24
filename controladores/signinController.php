@@ -21,7 +21,7 @@ class signinControl extends controlador_base
                     if (password_verify($password,$hash))
                     {
                         $_SESSION['email'] = $email;
-                        $_SESSION['rol'] = 'miembro';
+                        $_SESSION['rol'] = Usuario::obtenerRol($email);
                         $_SESSION['logueado'] = true;
                         $categorias = Categorias::obtenerCategorias();
                         $temas = Temas::obtenerTemas();

@@ -14,27 +14,13 @@
             <li class="header">Control</li>
             <li class="active treeview">
                 <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Catalogos</span> <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-dashboard"></i> <span>Moderacion</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="index.php?ruta=marcas"><i class="fa fa-circle-o"></i> Marcas</a></li>
-                    <li class="active"><a href="index.php?ruta=todosproductos"><i class="fa fa-circle-o"></i> Productos</a></li>
-                    <li class="active"><a href="index.php?ruta=proveedores"><i class="fa fa-circle-o"></i> Proveedores</a></li>
+                    <li><a href="index.php?ruta=marcas"><i class="fa fa-circle-o"></i>Categorias/ Post</a></li>
+                    <li class="active"><a href="index.php?ruta=todosproductos"><i class="fa fa-circle-o"></i>Usuarios</a></li>
                 </ul>
             </li>
-            {if in_array('administrar_todo',$smarty.session['privilegios'])}
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-users"></i>
-                        <span>Control de usuario</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="index.php?ruta=usuarios"><i class="fa fa-circle-o"></i>Usuarios</a></li>
-                        <li><a href="index.php?ruta=roles"><i class="fa fa-circle-o"></i> Roles</a></li>
-                    </ul>
-                </li>
-            {/if}
         </ul>
     </section>
     <!-- /.sidebar -->

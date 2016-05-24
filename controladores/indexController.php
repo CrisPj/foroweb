@@ -14,8 +14,12 @@ class indexControl extends controlador_base
         $this->registro->template = new Template($this->registro);
         $this->registro->template->categorias = array("nombre"=>"categorias","valores"=>$categorias);
         $this->registro->template->temas = array("nombre"=>"temas","valores"=>$temas);
+        if (isset($_GET['mensaje']))
+        {
+            $this->registro->template->bien = array("nombre"=>"bien","valores"=>$_GET['mensaje']);
+        }
         $this->registro->template->dtemas = array("nombre"=>"dtema","valores"=>$datosTema);
-        if ($_SESSION['rol'] == 'admin')
+        if ($_SESSION['rol'] == 'Administrador')
         {
             $this->registro->template->mostrar('admin/index');
         }
