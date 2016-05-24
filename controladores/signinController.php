@@ -23,7 +23,8 @@ class signinControl extends controlador_base
                         $_SESSION['email'] = $email;
                         $_SESSION['rol'] = Usuario::obtenerRol($email);
                         $_SESSION['logueado'] = true;
-                        $categorias = Categorias::obtenerCategorias();
+                        $_SESSION['rango'] = Usuario::obtenerRango($email);
+                        $categorias = Categorias::obtenerCategorias($_SESSION['rango']);
                         $temas = Temas::obtenerTemas();
                         $datosTema = Temas::obtenerDatosTema();
                         $this->registro->template->dtemas = array("nombre"=>"dtema","valores"=>$datosTema);

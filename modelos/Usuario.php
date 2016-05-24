@@ -106,4 +106,11 @@ class Usuario
         return $db->obtenerDato("select rol from usuario u join rol_usuario rs on u.id_usuario=rs.id_usuario
                                                                   join rol r on rs.id_rol=r.id_rol where email='$email'");
     }
+
+    public static function obtenerRango($email)
+    {
+        $db = Datos::getDB();
+        return $db->obtenerDato("select rol from usuario u join miembro m on u.id_usuario=m.id_usuario
+                                                                  join rango r on m.id_rango=r.id_rango where email='$email'");
+    }
 }
