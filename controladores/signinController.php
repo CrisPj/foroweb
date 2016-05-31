@@ -9,8 +9,6 @@ class signinControl extends controlador_base
 {
     function index()
     {
-        var_dump($_POST);
-        $this->registro->template = new Template($this->registro);
         if (isset($_POST['email']) && isset($_POST['password']))
         {
             $password = $_POST['password'];
@@ -22,26 +20,18 @@ class signinControl extends controlador_base
                     {
                         $_SESSION['email'] = $email;
                         $_SESSION['rol'] = Usuario::obtenerRol($email);
+                        $_SESSION['privilegios'] = Usuario::obtenerPrivilegiosUser($email);
                         $_SESSION['logueado'] = true;
-                        $_SESSION['rango'] = Usuario::obtenerRango($email);
-                        $categorias = Categorias::obtenerCategorias($_SESSION['rango']);
-                        $temas = Temas::obtenerTemas();
-                        $datosTema = Temas::obtenerDatosTema();
-                        $this->registro->template->dtemas = array("nombre"=>"dtema","valores"=>$datosTema);
-                        $this->registro->template->categorias = array("nombre"=>"categorias","valores"=>$categorias);
-                        $this->registro->template->temas = array("nombre"=>"temas","valores"=>$temas);
-                        $this->registro->template->mostrar('home/index');
+                        header("Location: index.php?r=index");
                     }
                     else
                     {
-                        die("no coincide");
+                        header('Location: index.php?r=index&mensaje="Datos invalidos"');
                     }
                 }
             else
             {
-                $this->registro->template->error = array('nombre' => 'error',
-                    'valor' => 'Password No seguro');
-                $this->registro->template->mostrar('home/login');
+                header('Location: index.php?r=login&mensaje="Password no seguro"');
             }
         }
     }

@@ -8,7 +8,7 @@ class datoseditadosControl extends controlador_base
 {
     function index()
     {
-        $this->registro->template = new Template();
+        $template = new Template();
         if (isset($_SESSION['email']))
         {
             var_dump($_POST);

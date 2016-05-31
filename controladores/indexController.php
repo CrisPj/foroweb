@@ -8,25 +8,26 @@ class indexControl extends controlador_base
 {
     function index()
     {
-        $rango = $_SESSION['rango'];
-        $categorias = Categorias::obtenerCategorias($rango);
+        $rol = $_SESSION['rol'];
+        $categorias = Categorias::obtenerCategorias($rol);
         $temas = Temas::obtenerTemas();
         $datosTema = Temas::obtenerDatosTema();
-        $this->registro->template = new Template($this->registro);
-        $this->registro->template->categorias = array("nombre"=>"categorias","valores"=>$categorias);
-        $this->registro->template->temas = array("nombre"=>"temas","valores"=>$temas);
+
+        $template = new Template();
+        $template->categorias = array("nombre"=>"categorias","valores"=>$categorias);
+        $template->temas = array("nombre"=>"temas","valores"=>$temas);
         if (isset($_GET['mensaje']))
         {
-            $this->registro->template->bien = array("nombre"=>"bien","valores"=>$_GET['mensaje']);
+            $template->bien = array("nombre"=>"bien","valores"=>$_GET['mensaje']);
         }
-        $this->registro->template->dtemas = array("nombre"=>"dtema","valores"=>$datosTema);
-        if ($_SESSION['rol'] == 'Administrador')
+        $template->dtemas = array("nombre"=>"dtema","valores"=>$datosTema);
+        if ($_SESSION['rol'] == 1)
         {
-            $this->registro->template->mostrar('admin/index');
+            $template->mostrar('admin/index');
         }
         else
         {
-            $this->registro->template->mostrar('home/index');
+            $template->mostrar('home/index');
         }
     }
 }

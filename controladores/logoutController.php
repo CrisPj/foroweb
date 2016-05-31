@@ -10,7 +10,7 @@ class logoutControl extends controlador_base
         unset($_SESSION);
         session_destroy();
         session_start();
-        $_SESSION['rol'] = 'visitante';
+        $_SESSION['rol'] = '9';
         var_dump($_SESSION);
         header('Location: index.php');
     }

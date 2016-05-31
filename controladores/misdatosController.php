@@ -8,14 +8,13 @@ class misdatosControl extends controlador_base
 {
     function index()
     {
-        $this->registro->template = new Template($this->registro);
+        $template = new Template();
         if (isset($_SESSION['email']))
         {
             $email = $_SESSION['email'];
             $datos = Usuario::obtenerDatos($email);
-            var_dump($datos);
-            $this->registro->template->datos = array("nombre"=>"datos","valores"=>$datos);
-            $this->registro->template->mostrar("common/datos");
+            $template->datos = array("nombre"=>"datos","valores"=>$datos);
+            $template->mostrar("common/datos");
         }
     }
 }

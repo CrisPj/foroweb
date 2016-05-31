@@ -4,16 +4,10 @@
  */
 class Ruta
 {
-    private $registro;
     private $ruta;
     public $archivo;
     public $controlador;
     public $action;
-
-    function __construct($registro)
-    {
-        $this->registro = $registro;
-    }
 
     function establecer($pRuta)
     {
@@ -35,7 +29,7 @@ class Ruta
 
         include $this->archivo;
         $className =  $this->controlador . 'Control';
-        $controlador = new $className($this->registro);
+        $controlador = new $className();
         if (is_callable(array($controlador, $this->action)) == false)
         {
             $action = 'index';

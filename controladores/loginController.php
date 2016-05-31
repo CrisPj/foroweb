@@ -7,7 +7,11 @@ class loginControl extends controlador_base
 {
     function index()
     {
-        $this->registro->template = new Template($this->registro);
-        $this->registro->template->mostrar('home/login');
+        $template = new Template();
+        if (isset($_GET['mensaje']))
+        {
+            $template->bien = array("nombre"=>"bien","valores"=>$_GET['mensaje']);
+        }
+        $template->mostrar('home/login');
     }
 }

@@ -9,9 +9,7 @@ class errorControl extends controlador_base
 {
     function index()
     {
-
-        $this->registro->template = new Template($this->registro);
-
-            $this->registro->template->mostrar('common/404');
+        $template = new Template();
+        $template->mostrar('common/404');
     }
 }

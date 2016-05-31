@@ -8,6 +8,11 @@ body
     box-shadow: none;
     font-size: 13px;
 }
+.sep
+{
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
 .navbar-brand {
     font-weight: 700;
 }

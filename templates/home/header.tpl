@@ -15,11 +15,6 @@
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li ><a href="index.php?r=actividad">Actividad</a></li>
-                    <li ><a href="index.php?r=usuarios">Usuarios</a></li>
-                    <li><a href="index.php?r=ayuda">Ayuda</a></li>
-                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {if isset($smarty.session['logueado'])}
                         <li class="dropdown">

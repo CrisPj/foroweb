@@ -7,14 +7,13 @@ class editardatosControl extends controlador_base
 {
     function index()
     {
-        $this->registro->template = new Template();
+        $template = new Template();
         if (isset($_SESSION['email']))
         {
             $email = $_SESSION['email'];
             $datos = Usuario::obtenerDatos($email);
-            var_dump($datos);
-            $this->registro->template->datos = array("nombre"=>"datos","valores"=>$datos);
-            $this->registro->template->mostrar('home/editardatos');
+            $template->datos = array("nombre"=>"datos","valores"=>$datos);
+            $template->mostrar('home/editardatos');
         }
     }
 }

@@ -7,7 +7,7 @@ class signupControl extends controlador_base
 {
     function index()
     {
-        $this->registro->template = new Template($this->registro);
-        $this->registro->template->mostrar('home/registrar');
+        $template = new Template();
+        $template->mostrar('home/registrar');
     }
 }

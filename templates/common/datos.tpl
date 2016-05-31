@@ -24,7 +24,7 @@
                         </tr>
                         <tr>
                             <td>Rango: </td>
-                            <td>{$datos['rango']}</td>
+                            <td>{$datos['rol']}</td>
                         </tr>
                         </tbody>
                     </table>

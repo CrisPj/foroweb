@@ -8,7 +8,6 @@ class registronuevoControl extends controlador_base
 {
     function index()
     {
-        var_dump($_POST);
         if (isset($_POST['email'])) {
             $email = $_POST['email'];
             $user = $_POST['user'];
@@ -20,6 +19,6 @@ class registronuevoControl extends controlador_base
                 Usuario::crearNuevo($user,$email, $password);
             }
         }
-        header('Location: index.php');
+        header('Location: index.php?login&mensaje="Cuentra creada exitosamente, logea para continuar"');
     }
 }

@@ -17,8 +17,8 @@
                     <i class="fa fa-dashboard"></i> <span>Moderacion</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="index.php?ruta=marcas"><i class="fa fa-circle-o"></i>Categorias/ Post</a></li>
-                    <li class="active"><a href="index.php?ruta=todosproductos"><i class="fa fa-circle-o"></i>Usuarios</a></li>
+                    <li><a href="index.php?r=acategorias"><i class="fa fa-circle-o"></i>Categorias/ Post</a></li>
+                    <li class="active"><a href="index.php?r=ausuarios"><i class="fa fa-circle-o"></i>Usuarios</a></li>
                 </ul>
             </li>
         </ul>

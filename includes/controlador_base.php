@@ -4,9 +4,5 @@
  */
 Abstract class controlador_base
 {
-    function __construct($registro)
-    {
-        $this->registro = $registro;
-    }
     abstract function index();
 }

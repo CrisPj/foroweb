@@ -6,7 +6,7 @@ class configControl extends controlador_base
 {
     function index()
     {
-        $this->registro->template = new Template();
-        $this->registro->template->mostrar("common/password");
+        $template = new Template();
+        $template->mostrar("common/password");
     }
 }

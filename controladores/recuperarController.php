@@ -7,7 +7,7 @@ class recuperarControl extends controlador_base
 {
     function index()
     {
-        $this->registro->template = new Template();
-        $this->registro->template->mostrar('home/recuperar');
+        $template = new Template();
+        $template->mostrar('home/recuperar');
     }
 }

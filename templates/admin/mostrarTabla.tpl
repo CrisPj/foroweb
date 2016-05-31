@@ -13,14 +13,10 @@
             <div class="col-md-12">
                 <div class="box">
                     <div class="box-header with-border">
-                        <h3 class="box-title">{if $tipo == "marcas" }Marcas
-                            {elseif $tipo == "productos"}Productos
-                            {elseif $tipo == "proveedores"}Proveedores
-                            {elseif $tipo == "usuarios"}Usuarios
+                        <h3 class="box-title">{if $tipo == "usuarios"}Usuarios
                             {elseif $tipo == "roles"}Roles
                             {elseif $tipo == "rolUsuario"}Roles del Usuario
                             {elseif $tipo == "privilegios"}Privilegios
-                            {elseif $tipo == "carrito"}Carrito
                             {/if}</h3>
                     </div>
                     <div class="box-body">
@@ -46,62 +42,9 @@
                                                 {/if}
                                             {/foreach}
                                             <td>
-                                                {if $tipo != "rolUsuario" && $tipo!="privilegios"}
-                                                    <a class="btn btn-info"
-                                                                    {if $tipo == "marcas" }
-                                                                {if in_array('actualizar_marca', $smarty.session['privilegios']) || in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=actualizar&id={$datos[registro]['id_marca']}&que=marca"
-                                                                {/if}
-                                                                    {elseif $tipo == "productos"}
-                                                                {if in_array('actualizar_producto', $smarty.session['privilegios']) || in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=actualizar&id={$datos[registro]['id_producto']}&que=producto"
-                                                                {/if}
-                                                                    {elseif $tipo == "proveedores"}
-                                                                {if in_array('actualizar_proveedor', $smarty.session['privilegios']) || in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=actualizar&id={$datos[registro]['id_proveedor']}&que=proveedor"
-                                                                {/if}
-                                                                    {elseif $tipo == "usuarios"}
-                                                                {if in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=actualizar&id={$datos[registro]['id_usuario']}&que=usuario"
-                                                                {/if}
-                                                            {elseif $tipo == "roles"}
-                                                        {if in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                            href="index.php?ruta=privilegios&id={$datos[registro]['id_rol']}&que=rol"
-                                                        {/if}
-                                                                    {/if}><i class="fa fa-pencil-square-o"></i> Editar</a>
-                                                {/if}
-                                                            {if $tipo == "usuarios"}
-                                                                <a class="btn btn-warning" href="index.php?ruta=rolusuario&id={$datos[registro]['id_usuario']}"><i class="fa fa-users"></i> Roles</a>
-                                                            {/if}
-                                                            <a class="btn btn-danger"
-                                                                    {if $tipo == "marcas" }
-                                                                {if in_array('borrar_marca', $smarty.session['privilegios']) || in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=eliminar&id={$datos[registro]['id_marca']}&que=marca"
-                                                                {/if}
-                                                                    {elseif $tipo == "productos"}
-                                                                {if in_array('borrar_producto', $smarty.session['privilegios']) || in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=eliminar&id={$datos[registro]['id_producto']}&que=producto"
-                                                                {/if}
-                                                                    {elseif $tipo == "proveedores"}
-                                                                {if in_array('borrar_proveedor', $smarty.session['privilegios']) || in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=eliminar&id={$datos[registro]['id_proveedor']}&que=proveedor"
-                                                                {/if}
-                                                                    {elseif $tipo == "usuarios"}
-                                                                {if in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=eliminar&id={$datos[registro]['id_usuario']}&que=usuario"
-                                                                {/if}
-                                                                    {elseif $tipo == "rolUsuario"}
-                                                                {if in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=eliminar&id={$datos[registro]['id_rol']}&user={$campos['id']}&que=rolusuario"
-                                                                {/if}
-                                                                    {elseif $tipo == "privilegios"}
-                                                                {if in_array('administrar_todo', $smarty.session['privilegios'])}
-                                                                    href="index.php?ruta=eliminar&id={$datos[registro]['id_privilegio']}&privilegio={$campos['id']}&que=privilegio"
-                                                                {/if}
-                                                                    {/if}><i class="fa fa-trash"></i> Borrar</a>
-
-                                                    </td>
-
+                                                <a href="index.php?r=eliminar&id={$datos[registro]['id_usuario']}" class="btn btn-default">Borrar</a>
+                                                <a href="index.php?r=editar&id={$datos[registro]['id_usuario']}" class="btn btn-default">Editar</a>
+                                            </td>
                                         </tr>
                                     {/section}
                                     </tbody>
