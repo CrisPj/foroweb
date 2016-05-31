@@ -39,10 +39,10 @@
                         {if in_array("editar_post",$privilegios) or in_array("eliminar_post",$privilegios)}
                             <td>
                                 {if (in_array("editar_post",$privilegios) && in_array($post['id_post'],$misposts)) or (in_array("editar_post",$privilegios) and $rol <= 2)}
-                                    <a href="index.php?editarpost&id={$post['id_post']}" class="btn btn-default">Editar Post</a>
+                                    <a href="index.php?r=editarpost&id={$post['id_post']}" class="btn btn-default">Editar Post</a>
                                 {/if}
                                 {if (in_array("eliminar_post",$privilegios) && in_array($post['id_post'],$misposts)) or (in_array("eliminar_post",$privilegios) and $rol <= 2)}
-                                    <a href="index.php?eliminarpost&id={$post['id_post']}" class="btn btn-default">Eliminar Post</a>
+                                    <a href="index.php?r=eliminarpost&id={$post['id_post']}" class="btn btn-default">Eliminar Post</a>
                                 {/if}
                             </td>
                         {/if}

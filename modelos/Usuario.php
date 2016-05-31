@@ -157,4 +157,11 @@ join rol_usuario ru on m.id_usuario = ru.id_usuario join rol r2 on r2.id_rol = r
         $db = Datos::getDB();
         return $db->obtenerDato("select usuario from usuario WHERE email='$email'");
     }
+
+    public static function esmiPost($id_post, $id_usuario)
+    {
+        $db = Datos::getDB();
+        return $db->obtenerDato("select id_post from posts where id_post=$id_post and id_usuario=$id_usuario");
+    }
+    
 }

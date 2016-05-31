@@ -28,10 +28,43 @@
                         </li>
                         
                     {else}
-                        <li><a href="index.php?r=login">Iniciar Sesion</a></li>
-                        <li><a href="index.php?r=signup">Crear una Cuenta</a></li>
+                        <li><a data-target="#myModal" data-toggle="modal">Iniciar Sesion</a></li>
+                        <li><a data-target="#modalre" data-toggle="modal"">Crear una Cuenta</a></li>
                     {/if}
                 </ul>
             </div>
         </div>
     </nav>
+
+<!-- Modal Login-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Iniciar Sesion</h4>
+            </div>
+            <div class="modal-body">
+                {include file="home/login.tpl"}
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Registro-->
+<div class="modal fade" id="modalre" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Registro nuevo</h4>
+            </div>
+            <div class="modal-body">
+                {include file="home/datosNuevo.tpl"}
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

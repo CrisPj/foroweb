@@ -45,7 +45,7 @@
                             </div>
                         {/if}
                     {/if}
-                    <p class="panel-title">{$cat['categoria']}</p>
+                    <h2 class="panel-title">{$cat['categoria']}</h2>
                     <p class="text-muted">{$cat['descripcion']}</p>
                 </div>
                 <div class="panel-body">

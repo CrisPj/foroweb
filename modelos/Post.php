@@ -38,4 +38,16 @@ class Post extends BaseModel
         $db = Datos::getDB();
         $db->ejecutar("insert into comentarios(id_post, comentario, id_usuario) VALUES ($id_post,'$comment',$id_usuario)");
     }
+
+    public static function editarPost($id_post, $titulo, $contenido)
+    {
+        $db = Datos::getDB();
+        $db->ejecutar("update posts set post = '$titulo', contenido = '$contenido' where id_post=$id_post");
+    }
+
+    public static function eliminarPost($id_post)
+    {
+        $db = Datos::getDB();
+        $db->ejecutar("delete from posts where id_post=$id_post");
+    }
 }

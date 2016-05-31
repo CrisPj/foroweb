@@ -41,4 +41,10 @@ class Categorias extends BaseModel
         $db = Datos::getDB();
         return $db->obtenerDato("select c.id_categoria from temas t JOIN categorias c on t.id_categoria = c.id_categoria where t.id_tema=$id_tema");
     }
+
+    public static function obtenerTodas()
+    {
+        $db = Datos::getDB();
+        return $db->obtenerDatos("select * from categorias");
+    }
 }

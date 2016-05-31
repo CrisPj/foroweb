@@ -8,7 +8,8 @@ class registronuevoControl extends controlador_base
 {
     function index()
     {
-        if (isset($_POST['email'])) {
+        if (isset($_POST['email']))
+        {
             $email = $_POST['email'];
             $user = $_POST['user'];
             $password = $_POST['password'];

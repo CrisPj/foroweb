@@ -3,7 +3,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Ferreweb
+            Feoroweb
             <small>Version 0.2</small>
         </h1>
     </section>
@@ -15,6 +15,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">{if $tipo == "usuarios"}Usuarios
                             {elseif $tipo == "roles"}Roles
+                            {elseif $tipo == "categorias"}Categorias
                             {elseif $tipo == "rolUsuario"}Roles del Usuario
                             {elseif $tipo == "privilegios"}Privilegios
                             {/if}</h3>
@@ -22,7 +23,7 @@
                     <div class="box-body">
                         <div class="row">
                             <div class="col-md-8">
-                                <table class="table table-responsive ">
+                                <table class="table table-responsive table-bordered">
                                     <thead>
                                     <tr>
                                         {foreach $nombrecolumnas as $titulo}
@@ -42,8 +43,16 @@
                                                 {/if}
                                             {/foreach}
                                             <td>
-                                                <a href="index.php?r=eliminar&id={$datos[registro]['id_usuario']}" class="btn btn-default">Borrar</a>
-                                                <a href="index.php?r=editar&id={$datos[registro]['id_usuario']}" class="btn btn-default">Editar</a>
+                                                {if $tipo == "usuarios"}
+                                                    <a href="index.php?r=eliminar&id={$datos[registro]['id_usuario']}" class="btn btn-default">Borrar</a>
+                                                    <a href="index.php?r=editar&id={$datos[registro]['id_usuario']}" class="btn btn-default">Editar</a>
+                                                {elseif $tipo == "roles"}Roles
+                                                {elseif $tipo == "categorias"}
+                                                    <a href="index.php?r=eliminar&id={$datos[registro]['id_categoria']}" class="btn btn-default">Borrar</a>
+                                                    <a href="index.php?r=editar&id={$datos[registro]['id_categoria']}" class="btn btn-default">Editar</a>
+                                                {elseif $tipo == "rolUsuario"}Roles del Usuario
+                                                {elseif $tipo == "privilegios"}Privilegios
+                                                {/if}
                                             </td>
                                         </tr>
                                     {/section}
@@ -63,7 +72,7 @@
                             </h3>
                         </div>
                         <div class="box-body">
-                            <form class="form" action="index.php?ruta=guardar" method='post' enctype='multipart/form-data' accept-charset='utf-8'>
+                            <form class="form" action="index.php?r=guardar" method='post' enctype='multipart/form-data' accept-charset='utf-8'>
                                 <fieldset>
                                     {if isset($campos)}
                                         {foreach from=$campos item=valor key=nombre}
